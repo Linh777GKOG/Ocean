@@ -168,3 +168,73 @@ body {
   bottom: 0;
   right: 20%;
 }
+
+.lotus {
+  width: 10vmin;
+  height: 5vmin;
+  background: conic-gradient(
+    var(--v3) 0deg 40deg,
+    var(--transparentv3) 50deg 70deg,
+    var(--v3) 80deg
+  );
+  border-radius: 50%;
+}
+
+.lotus-1 {
+  bottom: 10vmin;
+  right: 5vmin;
+  width: 20vmin;
+}
+
+.lotus-2 {
+  bottom: 20vmin;
+  right: 15vmin;
+  height: 3vmin;
+  transform: skew(-10deg);
+  opacity: 0.5;
+  mix-blend-mode: multiply;
+}
+
+.lotus-3 {
+  bottom: 10vmin;
+  right: 35vmin;
+  transform: rotate(180deg) skew(-20deg);
+  opacity: 0.8;
+  width: 15vmin;
+}
+
+.cloud {
+  width: 80vmin;
+  height: 6vmin;
+  background: currentcolor;
+  color: var(--cloud);
+  top: 24vmin;
+  left: 20vmin;
+  border-radius: 50%;
+  box-shadow: 30vmin 0.5vmin 0 -1vmin currentcolor,
+    -25vmin 0 0 -0.6vmin currentcolor;
+  opacity: 0.3;
+  transform: translate3d(-150vmin, 0, 0);
+  -webkit-animation: clouds 120s infinite;
+  animation: clouds 120s infinite;
+  -webkit-animation-delay: -10s;
+  animation-delay: -10s;
+}
+
+@-webkit-keyframes clouds {
+  50% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(150vmin, 0, 0);
+  }
+}
+
+@keyframes clouds {
+  50% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(150vmin, 0, 0);
+  }
+}
