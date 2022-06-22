@@ -485,3 +485,56 @@ body {
   -webkit-animation-name: rise-reflection;
   animation-name: rise-reflection;
 }
+
+.light {
+  height: 0.5vmin;
+  width: 20vmin;
+  background: white;
+  left: 20%;
+  right: 0;
+  margin: auto;
+  top: calc(50% + 1vmin);
+  -webkit-animation: light 20s infinite;
+  animation: light 20s infinite;
+  opacity: 0;
+  transform: scaleX(0.1) translate3d(0%, 0, 0);
+  border-radius: 0.25vh;
+  filter: blur(1px);
+}
+
+@-webkit-keyframes light {
+  5% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  10% {
+    opacity: 0.6;
+    transform: scaleX(1) translate3d(5%, 0, 0);
+  }
+  15% {
+    opacity: 0.6;
+    transform: scaleX(1) translate3d(-5%, 0, 0);
+  }
+  20% {
+    opacity: 0;
+    transform: scaleX(0.1) translate3d(0, 0, 0);
+  }
+}
+@keyframes light {
+  5% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  10% {
+    opacity: 0.6;
+    transform: scaleX(1) translate3d(5%, 0, 0);
+  }
+  15% {
+    opacity: 0.6;
+    transform: scaleX(1) translate3d(-5%, 0, 0);
+  }
+  20% {
+    opacity: 0;
+    transform: scaleX(0.1) translate3d(0, 0, 0);
+  }
+}
