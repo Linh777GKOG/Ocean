@@ -269,3 +269,44 @@ body {
   box-shadow: inset 0 0 20px -5px rgba(0, 0, 0, 0.2);
   border-radius: 0% 200% 0 0/0% 200%;
 }
+
+.stone:after {
+  content: '';
+  background: var(--v3);
+  width: 100%;
+  height: 100%;
+  right: -15%;
+  border-radius: inherit;
+  z-index: -1;
+  transform: scaleX(1.3) skew(10deg);
+  box-shadow: inset 0 0 20px -5px rgba(0, 0, 0, 0.4);
+}
+
+.grass {
+  height: 40vmin;
+  width: 10vmin;
+  border-radius: 0 60% 0 0/0 100% 0 0;
+  bottom: 0;
+  border-right: 5px solid var(--v4);
+  box-shadow: 1px 0 0 var(--s1);
+  filter: drop-shadow(-0.5vmin 6vmin 0 var(--s2))
+    drop-shadow(-4.5vmin 10vmin 0 var(--v3));
+}
+
+.grass-1 {
+  left: 14vmin;
+  bottom: -2vmin;
+  transform: scaleX(-1);
+  box-shadow: 2px 0 0 var(--v4);
+  border-color: var(--v3);
+  filter: drop-shadow(-1vmin 5vmin 0 var(--v3))
+    drop-shadow(-80vmin 5vmin 0 var(--v4));
+}
+
+.grass-2 {
+  right: 0;
+  left: auto;
+  height: 20vmin;
+  bottom: -2vmin;
+  transform: scaleX(-1);
+}
