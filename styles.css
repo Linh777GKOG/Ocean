@@ -310,3 +310,53 @@ body {
   bottom: -2vmin;
   transform: scaleX(-1);
 }
+
+.sun {
+  background: white;
+  border-radius: 50%;
+  width: 20vmin;
+  height: 20vmin;
+  left: calc(60% - 10vmin);
+  top: 100%;
+  transform: translate3d(0, 0, 0);
+  -webkit-animation: rise 20s infinite;
+  animation: rise 20s infinite;
+  box-shadow: 0 0 10px white;
+}
+
+.reed {
+  height: 40vmin;
+  width: 0.5vmin;
+  bottom: 0;
+  left: 10vmin;
+  color: var(--v4);
+  background: currentColor;
+  transform-origin: bottom center;
+  transform: rotate(4deg);
+  box-shadow: inset -1px 0 0 var(--s2), -6vmin 3vmin 0 0, 80vmin 0 0 0;
+  -webkit-animation: verticalise 20s infinite;
+  animation: verticalise 20s infinite;
+}
+
+.reed-1 {
+  color: var(--s2);
+  left: 15vmin;
+  height: 50vmin;
+  bottom: -5vmin;
+  transform: rotate(-2deg);
+  -webkit-animation: verticalise-1 20s infinite;
+  animation: verticalise-1 20s infinite;
+  box-shadow: inset -1px 0 0 var(--s1), 6vmin 13vmin 0 0 var(--s1),
+    80vmin 10vmin 0 0 var(--v3);
+}
+
+.reed:after {
+  content: '';
+  width: 1.5vmin;
+  height: 10vmin;
+  background: currentcolor;
+  border-radius: 0.75vmin;
+  top: 0;
+  left: -0.5vmin;
+  box-shadow: inherit;
+}
