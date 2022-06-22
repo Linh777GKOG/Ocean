@@ -538,3 +538,51 @@ body {
     transform: scaleX(0.1) translate3d(0, 0, 0);
   }
 }
+
+.light-1 {
+  top: calc(50% + 2vmin);
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.light-2 {
+  top: calc(50% + 3vmin);
+  width: 18vmin;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.light-3 {
+  top: calc(50% + 4vmin);
+  width: 18vmin;
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+.light-4 {
+  top: calc(50% + 5vmin);
+  width: 16vmin;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.light-5 {
+  top: calc(50% + 8vmin);
+  width: 14vmin;
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+
+.light-6 {
+  top: calc(50% + 9vmin);
+  width: 10vmin;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+.light-7 {
+  top: calc(50% + 7vmin);
+  width: 12vmin;
+  -webkit-animation-delay: 3.5s;
+  animation-delay: 3.5s;
+}
