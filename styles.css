@@ -40,3 +40,9 @@ body {
   border-radius: 35%;
   animation: waves 5s ease-in-out alternate infinite;
 }
+
+@keyframes waves {
+  to {
+    transform: translateY(-50%) rotate(540deg);
+  }
+}
