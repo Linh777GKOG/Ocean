@@ -238,3 +238,34 @@ body {
     transform: translate3d(150vmin, 0, 0);
   }
 }
+
+.cloud-1 {
+  left: 60vmin;
+  top: 15vmin;
+  opacity: 0.2;
+  filter: blur(1px);
+  -webkit-animation-delay: 0;
+  animation-delay: 0;
+  -webkit-animation-duration: 100s;
+  animation-duration: 100s;
+}
+
+.water {
+  top: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(#fea79855, var(--v2));
+  overflow: hidden;
+  box-shadow: inset 0 1px 4px -3px white;
+}
+
+.stone {
+  bottom: -5vh;
+  left: 0;
+  height: 20vmin;
+  width: 40vmin;
+  background: var(--v4);
+  box-shadow: inset 0 0 20px -5px rgba(0, 0, 0, 0.2);
+  border-radius: 0% 200% 0 0/0% 200%;
+}
