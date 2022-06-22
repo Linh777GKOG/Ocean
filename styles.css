@@ -360,3 +360,75 @@ body {
   left: -0.5vmin;
   box-shadow: inherit;
 }
+
+@-webkit-keyframes verticalise {
+  0%,
+  10% {
+    transform: rotate(4deg);
+  }
+  30%,
+  70% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes verticalise {
+  0%,
+  10% {
+    transform: rotate(4deg);
+  }
+  30%,
+  70% {
+    transform: rotate(0);
+  }
+}
+@-webkit-keyframes verticalise-1 {
+  0%,
+  10% {
+    transform: rotate(-2deg);
+  }
+  45%,
+  70% {
+    transform: rotate(0) translateY(-6vmin);
+  }
+}
+@keyframes verticalise-1 {
+  0%,
+  10% {
+    transform: rotate(-2deg);
+  }
+  45%,
+  70% {
+    transform: rotate(0) translateY(-6vmin);
+  }
+}
+@-webkit-keyframes rise {
+  100% {
+    transform: translate3d(0, -100vh, 20vmin);
+  }
+}
+@keyframes rise {
+  100% {
+    transform: translate3d(0, -100vh, 20vmin);
+  }
+}
+@-webkit-keyframes rise-reflection {
+  30% {
+    opacity: 0;
+    transform: translate3d(0, 5vmin, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(0, 80vmin, 0);
+  }
+}
+@keyframes rise-reflection {
+  30% {
+    opacity: 0;
+    transform: translate3d(0, 5vmin, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(0, 80vmin, 0);
+  }
+}
